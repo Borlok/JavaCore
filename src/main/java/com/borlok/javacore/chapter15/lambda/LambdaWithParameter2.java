@@ -3,8 +3,8 @@ package main.java.com.borlok.javacore.chapter15.lambda;
 /**
  * Применение лямбда выражения с параметром
  */
-public class LambdaWithParameter15 {
-    public LambdaWithParameter15() {
+public class LambdaWithParameter2 {
+    public LambdaWithParameter2() {
         NumericTest test;
         int i = -10;
 

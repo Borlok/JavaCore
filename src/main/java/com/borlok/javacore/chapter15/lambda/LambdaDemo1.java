@@ -3,8 +3,8 @@ package main.java.com.borlok.javacore.chapter15.lambda;
 /**
  * Применение простого лямбда выражения
  */
-public class LambdaDemo14 {
-    public LambdaDemo14() {
+public class LambdaDemo1 {
+    public LambdaDemo1() {
         MyNumber myNumber;
 
         myNumber = () -> 123.45;
