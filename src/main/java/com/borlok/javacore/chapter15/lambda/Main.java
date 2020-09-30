@@ -12,7 +12,7 @@ public class Main {
 //        new LambdaWith2Parameters3(); // Пример лямбда-выражения с двумя параметрами
 //        new BlockLambdaDemo4(); // Применение блочного лямбда выражения (Факториал)
 //        new BlockLambdaDemoString5(); // Применение блочного лямбда выражения 2 (Реверс слова)
-//        new GenericFunctionalInterfaceDemo6(); // Применение обоьщенного функционального интерфейса
+//        new GenericFunctionalInterfaceDemo6(); // Применение обобщенного функционального интерфейса
 //        new LambdasAsArgumentsDemo7(x->x.toUpperCase(), "Hello world"); //Пример передачи лямбды в аргументе
         //Пример передачи лямбды в аргументе (Блочная версия)
 //        new LambdasAsArgumentsDemo7(x->{
@@ -39,13 +39,13 @@ public class Main {
 //        new LambdaExceptionDemo8(); // Пример генерирования исключения из лямбда-выражения
 //        new VarCapture9(); // Пример использования локальных переменных в лямбда выражениях
 //        new MethodRefDemo10(); // Пример со ссылкой на статический и не статический метод с классом MyStringOps
-//        new InstanceMethWithObjectRefDemo11(); // Пример лямбды, где параметрами выступают класс и параметр метода класса
-//        new GenericMethodRefDemo12(); // Применение лямбды на обобщенный метод
-//        new UseMethodRef13(); // Пример использования лямбды как компаратора
-//        new ConstructorRefDemo14(); // Применение лямбда-ссылки на конструктор
+        new InstanceMethWithObjectRefDemo11(); // Пример лямбды, где параметрами выступают класс и параметр метода класса
+        new GenericMethodRefDemo12(); // Применение лямбды на обобщенный метод
+        new UseMethodRef13(); // Пример использования лямбды как компаратора
+        new ConstructorRefDemo14(); // Применение лямбда-ссылки на конструктор
 //        new ConstructorRefDemo215(); // Применение ссылки на конструктор на обобщенный класс
 //        new ConstructorRefDemo316(); // Реализация простой фабрики при помощи лямбды
-        new BlockLambdaDemo17(); // Применение блочного лямбда выражения (Факториал) со встроенным функ.интерфейсом
+//        new BlockLambdaDemo17(); // Применение блочного лямбда выражения (Факториал) со встроенным функ.интерфейсом
 
     }
 }

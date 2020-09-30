@@ -12,7 +12,6 @@ public class MethodRefDemo10 {
 
     public MethodRefDemo10() {
         String text = "Лямбда-выражения повышают эффективность Java";
-
         MyStringOps210 ops = new MyStringOps210();
 
         String out = stringOp(MyStringOps10::strReverse,text);
