@@ -9,8 +9,8 @@ import java.nio.file.Paths;
 /**
  * Использование прямого отображения для чтения из файла
  */
-public class MappedChaпnelRead2 {
-    public MappedChaпnelRead2() {
+public class MappedChannelRead2 {
+    public MappedChannelRead2() {
         try (FileChannel fChanel = (FileChannel) Files.newByteChannel(Paths.get("test.txt"))) {
             long fSize = fChanel.size();
             MappedByteBuffer mBuf = fChanel.map(FileChannel.MapMode.READ_ONLY,0,fSize);
