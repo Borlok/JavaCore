@@ -1,9 +1,6 @@
 package main.java.com.borlok.javacore.reflection;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Modifier;
+import java.lang.reflect.*;
 import java.util.Arrays;
 
 public class ReflectionDemo {
@@ -39,7 +36,7 @@ public class ReflectionDemo {
         Class<?>[] interfaces = testReflection.getInterfaces(); // Получаем реализуемые интерфейсы
         Constructor<?>[] constructors = testReflection.getConstructors(); // Получение конструкторов
         Constructor<?> constructor =
-                testReflection.getConstructor(new Class<?>[]{String.class, int.class}); // Конкретный конструктор
+                testReflection.getConstructor(String.class, int.class); // Конкретный конструктор
         Class<?>[] parameterTypes = constructor.getParameterTypes(); // Получение параметров конструктора
 
         System.out.println("===========Исходя из полученных данных создаем объект через второй конструктор============");
@@ -60,7 +57,7 @@ public class ReflectionDemo {
                         " \nsecond constructor with parameters: " + constructor +
                         " \nparameterTypes of constructor: " + Arrays.toString(parameterTypes)
         );
-        System.out.println("///////////////////Работа с поллями.................");
+        System.out.println("///////////////////Работа с pulbic поллями.................");
         ///////////////////////////////////////
         Field[] fields = testReflection.getFields(); // Поля класса но только с public модификатором
         Field field = testReflection.getField("age"); // Получаем поле
@@ -77,5 +74,55 @@ public class ReflectionDemo {
         field.set(gottenObjectFromReflection, 14); // Установка значения поля
         System.out.println("===========Исходя из полученных данных создаем объект============");
         System.out.println(gottenObjectFromReflection);
+        System.out.println("///////////////////Работа с методами.................");
+        Method [] methods = testReflection.getMethods();// Получение всех методов
+        Method method =
+                testReflection.getMethod("sayHello", String.class); // Получение одного метода с параметрами
+        Method method2 =
+                testReflection.getMethod("sayHello", null); // Получение одного метода без параметров
+        Class<?>[] methodParameterTypes = method.getParameterTypes(); // Типы параметров метода
+        Class<?> methodReturnType = method.getReturnType(); // Возвращаемый тип метода
+        Method declaredMethod = testReflection.getDeclaredMethod("sayHello", String.class);
+        System.out.println("=============Вызов метода===========");
+        declaredMethod.invoke(new TestReflection(), "Yurii"); // Вызов метода
+
+        System.out.println("methods: " + Arrays.toString(methods) +
+                " \nmethod: " + method +
+                " \nmethod2: " + method2 +
+                " \nmethodParameterTypes: " + Arrays.toString(methodParameterTypes) +
+                " \nmethodReturnType: " + methodReturnType
+
+        );
+
+        System.out.println("==========Доступ к private полям с помощью рефлексии==========");
+        Field privateField = testReflection.getDeclaredField("name"); // Получение филда private
+        privateField.setAccessible(true); // Установить разрешение доступа к полю
+        String privateDeclaredField = (String) privateField.get(new TestReflection()); // Получение значения приватного филда
+        System.out.println("privateField: " + privateField +
+                " \nprivateDeclaredField: " + privateDeclaredField
+        );
+        System.out.println("==========Доступ к private методам с помощью рефлексии==========");
+        Method privateStringMethod = testReflection.getDeclaredMethod("sayGoodbye"); // Получаем закрытый метод
+        privateStringMethod.setAccessible(true); // Отключаем проверку на приватность
+        String returnValue = (String) privateStringMethod.invoke(new TestReflection(), null);
+
+        System.out.println("значение, которое возвращает private метод = " + returnValue);
+        System.out.println("==========Доступ к аннотациям с помощью рефлексии пока не написал==========");
+        System.out.println("==========Массивы в рефлексии==========");
+        System.out.println("==========Создание массива==========");
+        int [] arr = (int[]) Array.newInstance(int.class, 2); // Создание
+        Array.set(arr, 0, 111); // добавление
+        Array.set(arr, 1, 222);
+
+        System.out.println("первый элемент массива = " + Array.get(arr, 0));
+        System.out.println("второй элемент массива = " + Array.get(arr, 1));
+        System.out.println("Получение класса");
+
+        Class<?> intArrayObject = Util.getClass(arr.getClass().getName());
+        System.out.println("Обобщенный класс: " + intArrayObject); // Обобщенный класс
+
+        Class<?> arrayClass = arr.getClass();
+        Class<?> arrayComponentType = arrayClass.getComponentType();
+        System.out.println("Уточненный тип массива: " + arrayComponentType); // Уточненный тип массива
     }
 }

@@ -14,6 +14,19 @@ public class TestReflection extends SuperClassReflection implements Serializable
         this.age = age;
     }
 
+    public void sayHello() {
+        System.out.println("Hello, незнакомец");
+    }
+
+    public void sayHello(String name) {
+        System.out.println("Hello, " + name);
+    }
+
+    private String sayGoodbye () {
+        System.out.println("Goodbye!");
+        return "Goodbye!";
+    }
+
     public String getName() {
         return name;
     }
