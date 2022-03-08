@@ -3,6 +3,7 @@ package main.java.com.borlok.javacore.chapter28;
 import main.java.com.borlok.javacore.chapter28.countdownlatch.CountDownLatchDemo;
 import main.java.com.borlok.javacore.chapter28.cyclicbarrier.CyclicBarrierDemo;
 import main.java.com.borlok.javacore.chapter28.exchanger.ExchangerDemo;
+import main.java.com.borlok.javacore.chapter28.phaser.PhaserDemo;
 import main.java.com.borlok.javacore.chapter28.semaphore.SemaphoreDemo;
 
 public class Main {
@@ -10,6 +11,7 @@ public class Main {
 //        new SemaphoreDemo(); // Пример класса семафора
 //        new CountDownLatchDemo(); // Пример countDownLatch
 //        new CyclicBarrierDemo(); // Пример cyclicBarrier
-        new ExchangerDemo(); // Пример exchanger
+//        new ExchangerDemo(); // Пример exchanger
+        new PhaserDemo(); // Пример фазера
     }
 }
