@@ -1,8 +1,10 @@
 package main.java.com.borlok.javacore.chapter28;
 
+import main.java.com.borlok.javacore.chapter28.callable.CallableDemo;
 import main.java.com.borlok.javacore.chapter28.countdownlatch.CountDownLatchDemo;
 import main.java.com.borlok.javacore.chapter28.cyclicbarrier.CyclicBarrierDemo;
 import main.java.com.borlok.javacore.chapter28.exchanger.ExchangerDemo;
+import main.java.com.borlok.javacore.chapter28.executor.ExecutorDemo;
 import main.java.com.borlok.javacore.chapter28.phaser.PhaserDemo;
 import main.java.com.borlok.javacore.chapter28.semaphore.SemaphoreDemo;
 
@@ -12,6 +14,8 @@ public class Main {
 //        new CountDownLatchDemo(); // Пример countDownLatch
 //        new CyclicBarrierDemo(); // Пример cyclicBarrier
 //        new ExchangerDemo(); // Пример exchanger
-        new PhaserDemo(); // Пример фазера
+//        new PhaserDemo(); // Пример фазера
+//        new ExecutorDemo(); // Executor demo
+        new CallableDemo(); // Callable demo
     }
 }
