@@ -1,5 +1,6 @@
 package main.java.com.borlok.javacore.chapter28;
 
+import main.java.com.borlok.javacore.chapter28.atomic.AtomicDemo;
 import main.java.com.borlok.javacore.chapter28.callable.CallableDemo;
 import main.java.com.borlok.javacore.chapter28.countdownlatch.CountDownLatchDemo;
 import main.java.com.borlok.javacore.chapter28.cyclicbarrier.CyclicBarrierDemo;
@@ -18,6 +19,7 @@ public class Main {
 //        new PhaserDemo(); // Пример фазера
 //        new ExecutorDemo(); // Executor demo
 //        new CallableDemo(); // Callable demo
-        new LockDemo(); // Lock demo
+//        new LockDemo(); // Lock demo
+        new AtomicDemo(); // Atomic demo
     }
 }
