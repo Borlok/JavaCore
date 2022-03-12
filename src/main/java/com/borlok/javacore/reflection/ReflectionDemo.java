@@ -105,8 +105,16 @@ public class ReflectionDemo {
         Method privateStringMethod = testReflection.getDeclaredMethod("sayGoodbye"); // Получаем закрытый метод
         privateStringMethod.setAccessible(true); // Отключаем проверку на приватность
         String returnValue = (String) privateStringMethod.invoke(new TestReflection(), null);
-
         System.out.println("значение, которое возвращает private метод = " + returnValue);
+
+        Object [] arg = new Object[2];
+        arg[0] = 32;
+        arg[1] = 67;
+        Class<?> [] params = {int.class, long.class};
+        privateStringMethod = testReflection.getDeclaredMethod("sayGoodbye", params); // Получаем закрытый метод c 2 аргументами
+        privateStringMethod.setAccessible(true); // Отключаем проверку на приватность
+        returnValue = (String) privateStringMethod.invoke(new TestReflection(), arg);
+        System.out.println("значение, которое возвращает private метод c 2 аргументами = " + returnValue);
         System.out.println("==========Доступ к аннотациям с помощью рефлексии пока не написал==========");
         System.out.println("==========Массивы в рефлексии==========");
         System.out.println("==========Создание массива==========");

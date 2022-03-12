@@ -27,6 +27,16 @@ public class TestReflection extends SuperClassReflection implements Serializable
         return "Goodbye!";
     }
 
+    private String sayGoodbye (int i) {
+        System.out.println("Goodbye! " + i);
+        return "Goodbye! " + i;
+    }
+
+    private String sayGoodbye (int i, long z) {
+        System.out.println("Goodbye! int: " + i + " long: " + z);
+        return "Goodbye! int: " + i + " and long: " + z;
+    }
+
     public String getName() {
         return name;
     }
