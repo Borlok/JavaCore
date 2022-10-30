@@ -1,7 +1,7 @@
 package main.java.com.borlok.javacore.chapter11;
 
 public class CallMe {
-    public synchronized void call(String msg) { // public synchronized void call(String msg)
+    public void call(String msg) { // public synchronized void call(String msg)
         System.out.print("[" + msg);
         try {
             Thread.sleep(1000);

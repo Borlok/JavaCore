@@ -16,6 +16,6 @@ public class RecursiveTaskDemo {
 
         double summation = forkJoinPool.invoke(task);
 
-        System.out.println("Сгььирование " + summation);
+        System.out.println("Суммирование " + summation);
     }
 }
