@@ -18,7 +18,7 @@ public class StreamDemo2 {
         list.add(5);
 
         Optional<Integer> prodObj = list.stream().reduce((a,b) -> {
-            System.out.println(a + " " + b + " =" + (a * b));
+            System.out.println(a + " " + b + " = " + (a * b));
             return a * b;});
         System.out.println("Произведение в виде значения типа Optional: " + prodObj.get());
 

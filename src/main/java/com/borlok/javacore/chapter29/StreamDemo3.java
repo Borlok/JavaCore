@@ -18,11 +18,11 @@ public class StreamDemo3 {
 
         double sqrt = list.parallelStream().reduce(1.0,
                 (x,z) -> {
-                    System.out.println("Накопитель " + x + " " + z + " =" + (x * Math.sqrt(z)));
+                    System.out.println("Накопитель " + x + " " + z + " = " + (x * Math.sqrt(z)));
                     return x * Math.sqrt(z);
                 },
                 (x,z) -> {
-                    System.out.println("Объединитель " + x + " " + z + " =" + (x * z));
+                    System.out.println("Объединитель " + x + " " + z + " = " + (x * z));
                     return x * z;
                 });
 

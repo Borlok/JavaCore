@@ -1,5 +1,7 @@
 package main.java.com.borlok.javacore.reflection;
 
+import main.java.com.borlok.javacore.reflection.proxylib.ProxyLibsDemo;
+
 import java.lang.reflect.*;
 import java.util.Arrays;
 
@@ -57,7 +59,7 @@ public class ReflectionDemo {
                         " \nsecond constructor with parameters: " + constructor +
                         " \nparameterTypes of constructor: " + Arrays.toString(parameterTypes)
         );
-        System.out.println("///////////////////Работа с pulbic поллями.................");
+        System.out.println("///////////////////Работа с pulbic полями.................");
         ///////////////////////////////////////
         Field[] fields = testReflection.getFields(); // Поля класса но только с public модификатором
         Field field = testReflection.getField("age"); // Получаем поле
@@ -132,5 +134,13 @@ public class ReflectionDemo {
         Class<?> arrayClass = arr.getClass();
         Class<?> arrayComponentType = arrayClass.getComponentType();
         System.out.println("Уточненный тип массива: " + arrayComponentType); // Уточненный тип массива
+
+        System.out.println("==========Создание прокси объектов==========");
+        System.out.println("==========JDKProxy==========");
+        new ProxyLibsDemo().userJdkProxyTest();
+        System.out.println("==========CGLIB==========");
+        new ProxyLibsDemo().userCGLibTest();
+        System.out.println("==========ByteBuddy==========");
+        new ProxyLibsDemo().userByteBuddyTest();
     }
 }

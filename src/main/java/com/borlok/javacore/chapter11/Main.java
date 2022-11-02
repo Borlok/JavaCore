@@ -7,11 +7,11 @@ import java.util.Timer;
 
 public class Main {
     public static void main(String[] args) {
-        new CurrentThreadDemo1(); // Пример управления главным потоком
+//        new CurrentThreadDemo1(); // Пример управления главным потоком
 
 
-        new NewThread2(); // Пример реализации интерфейса Runnable
-        new NewThread3(); // Пример реализации расширением класса Thread
+//        new NewThread2(); // Пример реализации интерфейса Runnable
+//        new NewThread3(); // Пример реализации расширением класса Thread
 //        try {
 //            for (int i = 100; i > 0; i--) {
 //                System.out.println("Главный поток: "
@@ -23,7 +23,7 @@ public class Main {
 //        }
         //////////////////// Конец примера
 
-        new NewThread4("Один"); // Пример реализации нескольких потоков
+//        new NewThread4("Один"); // Пример реализации нескольких потоков
 //        new NewThread4("Два"); // Пример реализации нескольких потоков
 //        new NewThread4("три"); // Пример реализации нескольких потоков
 //        try {
