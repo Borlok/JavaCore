@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter13.streams;
+package com.borlok.javacore.chapter13.streams;
 
 import java.io.BufferedReader;
 import java.io.IOException;

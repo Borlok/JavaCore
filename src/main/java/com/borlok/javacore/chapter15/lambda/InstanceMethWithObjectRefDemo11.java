@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter15.lambda;
+package com.borlok.javacore.chapter15.lambda;
 
 /**
  * Пример лямбды, где параметрами выступают класс и параметр метода класса

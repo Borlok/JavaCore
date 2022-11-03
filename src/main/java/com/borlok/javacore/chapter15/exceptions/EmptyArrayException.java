@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter15.exceptions;
+package com.borlok.javacore.chapter15.exceptions;
 
 public class EmptyArrayException extends Exception{
     public EmptyArrayException() {

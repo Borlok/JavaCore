@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter28.lock;
+package com.borlok.javacore.chapter28.lock;
 
 import java.util.concurrent.locks.ReentrantLock;
 

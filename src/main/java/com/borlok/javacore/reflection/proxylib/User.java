@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.reflection.proxylib;
+package com.borlok.javacore.reflection.proxylib;
 
 public class User implements IUser {
     private final String name;

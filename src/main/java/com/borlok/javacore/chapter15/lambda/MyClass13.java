@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter15.lambda;
+package com.borlok.javacore.chapter15.lambda;
 
 public class MyClass13 {
     private int val;

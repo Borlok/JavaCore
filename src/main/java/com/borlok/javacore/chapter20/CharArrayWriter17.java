@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter20;
+package com.borlok.javacore.chapter20;
 
 import java.io.CharArrayWriter;
 import java.io.FileWriter;

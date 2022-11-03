@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter13;
+package com.borlok.javacore.chapter13;
 
 /**
  * Пример применения платформенно-ориентированного метода

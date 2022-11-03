@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter10.Exceptions;
+package com.borlok.javacore.chapter10.Exceptions;
 
 public class MyException extends Exception{
     private int def;

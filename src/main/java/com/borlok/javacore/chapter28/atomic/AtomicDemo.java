@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter28.atomic;
+package com.borlok.javacore.chapter28.atomic;
 
 public class AtomicDemo {
     public AtomicDemo() {

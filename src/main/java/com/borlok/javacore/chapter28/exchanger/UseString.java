@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter28.exchanger;
+package com.borlok.javacore.chapter28.exchanger;
 
 import java.util.concurrent.Exchanger;
 

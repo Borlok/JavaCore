@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter29;
+package com.borlok.javacore.chapter29;
 
 public class NamePhone {
     String name;

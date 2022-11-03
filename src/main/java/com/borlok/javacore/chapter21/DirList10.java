@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter21;
+package com.borlok.javacore.chapter21;
 
 import java.io.IOException;
 import java.nio.file.DirectoryStream;

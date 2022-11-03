@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter13;
+package com.borlok.javacore.chapter13;
 
 import static java.lang.Math.sqrt;
 import static java.lang.Math.pow;

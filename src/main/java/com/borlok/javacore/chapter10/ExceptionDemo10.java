@@ -1,6 +1,6 @@
-package main.java.com.borlok.javacore.chapter10;
+package com.borlok.javacore.chapter10;
 
-import main.java.com.borlok.javacore.chapter10.Exceptions.MyException;
+import com.borlok.javacore.chapter10.Exceptions.MyException;
 
 /**
  * Пример создания собственных исключений

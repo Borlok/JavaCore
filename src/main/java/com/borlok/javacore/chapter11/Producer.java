@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter11;
+package com.borlok.javacore.chapter11;
 
 public class Producer implements Runnable{
     Package q;

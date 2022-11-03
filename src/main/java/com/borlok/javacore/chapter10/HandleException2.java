@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter10;
+package com.borlok.javacore.chapter10;
 
 import java.util.Random;
 

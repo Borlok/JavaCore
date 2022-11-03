@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter28.countdownlatch;
+package com.borlok.javacore.chapter28.countdownlatch;
 
 import java.util.concurrent.CountDownLatch;
 

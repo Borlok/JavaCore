@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter11;
+package com.borlok.javacore.chapter11;
 
 public class NewThread2 implements Runnable {
     public NewThread2() {

@@ -1,6 +1,6 @@
-package main.java.com.borlok.javacore.chapter28.cyclicbarrier;
+package com.borlok.javacore.chapter28.cyclicbarrier;
 
-import main.java.com.borlok.javacore.chapter28.countdownlatch.MyThread;
+import com.borlok.javacore.chapter28.countdownlatch.MyThread;
 
 import java.util.concurrent.CyclicBarrier;
 

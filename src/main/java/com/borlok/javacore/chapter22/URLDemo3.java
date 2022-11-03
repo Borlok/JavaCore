@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter22;
+package com.borlok.javacore.chapter22;
 
 import java.net.MalformedURLException;
 import java.net.URL;

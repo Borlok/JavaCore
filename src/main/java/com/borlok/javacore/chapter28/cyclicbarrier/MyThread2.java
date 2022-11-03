@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter28.cyclicbarrier;
+package com.borlok.javacore.chapter28.cyclicbarrier;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;

@@ -1,6 +1,6 @@
-package main.java.com.borlok.javacore.chapter15.lambda;
+package com.borlok.javacore.chapter15.lambda;
 
-import main.java.com.borlok.javacore.chapter15.exceptions.EmptyArrayException;
+import com.borlok.javacore.chapter15.exceptions.EmptyArrayException;
 
 import java.util.function.Function;
 import java.util.function.UnaryOperator;

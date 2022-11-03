@@ -1,8 +1,8 @@
-package main.java.com.borlok.javacore.chapter13.streams;
+package com.borlok.javacore.chapter13.streams;
 
 
-import main.java.com.borlok.javacore.chapter13.applets.SimpleApplet8;
-import main.java.com.borlok.javacore.chapter13.streams.CopyFile7;
+import com.borlok.javacore.chapter13.applets.SimpleApplet8;
+import com.borlok.javacore.chapter13.streams.CopyFile7;
 
 import java.io.IOException;
 

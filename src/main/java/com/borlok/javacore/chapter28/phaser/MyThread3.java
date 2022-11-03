@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter28.phaser;
+package com.borlok.javacore.chapter28.phaser;
 
 import java.util.concurrent.Phaser;
 

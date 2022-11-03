@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter28.callable;
+package com.borlok.javacore.chapter28.callable;
 
 import java.util.concurrent.Callable;
 

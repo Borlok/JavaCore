@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter28.atomic;
+package com.borlok.javacore.chapter28.atomic;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

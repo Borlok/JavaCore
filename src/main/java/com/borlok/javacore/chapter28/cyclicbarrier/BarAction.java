@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter28.cyclicbarrier;
+package com.borlok.javacore.chapter28.cyclicbarrier;
 
 public class BarAction implements Runnable {
     @Override

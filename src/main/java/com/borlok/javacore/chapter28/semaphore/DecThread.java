@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter28.semaphore;
+package com.borlok.javacore.chapter28.semaphore;
 
 import java.util.concurrent.Semaphore;
 

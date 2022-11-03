@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter21;
+package com.borlok.javacore.chapter21;
 
 /**
  * Система ввода-вывода NIO

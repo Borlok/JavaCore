@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.reflection;
+package com.borlok.javacore.reflection;
 
 public class SuperClassReflection {
 }

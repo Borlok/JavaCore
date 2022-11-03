@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.reflection.proxylib;
+package com.borlok.javacore.reflection.proxylib;
 
 import com.borlok.javacore.reflection.proxylib.MyInterceptor;
 import net.bytebuddy.ByteBuddy;
@@ -13,7 +13,7 @@ import static net.bytebuddy.matcher.ElementMatchers.named;
 
 public class ProxyLibsDemo {
     public void userJdkProxyTest() {
-        main.java.com.borlok.javacore.reflection.proxylib.User user = new User("Вася");
+        User user = new User("Вася");
 
         InvocationHandler handler = (proxy, method, args) -> {
             if(method.getName().equals("getName")){
@@ -41,12 +41,12 @@ public class ProxyLibsDemo {
     }
 
     public void userByteBuddyTest() {
-        main.java.com.borlok.javacore.reflection.proxylib.User user = new User("Вася");
+        User user = new User("Вася");
 
         User userProxy = null;
         try {
             userProxy = new ByteBuddy()
-                    .subclass(main.java.com.borlok.javacore.reflection.proxylib.User.class)
+                    .subclass(User.class)
                     .method(named("getName"))
                     .intercept(MethodDelegation.to(new MyInterceptor(user)))
                     .make()

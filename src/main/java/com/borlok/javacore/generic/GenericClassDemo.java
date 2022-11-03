@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.generic;
+package com.borlok.javacore.generic;
 
 import java.util.ArrayList;
 import java.util.List;

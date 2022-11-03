@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter13;
+package com.borlok.javacore.chapter13;
 /**
  * Демонстрация assert (только с включенным режимом проверки утверждений)
  * Нужен только для отладки программ, его плюсом является то, что на стадии

@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter28.forkjoin.recursiveactiondemo;
+package com.borlok.javacore.chapter28.forkjoin.recursiveactiondemo;
 
 import java.util.concurrent.ForkJoinPool;
 

@@ -1,13 +1,13 @@
-package main.java.com.borlok.javacore.chapter28;
+package com.borlok.javacore.chapter28;
 
-import main.java.com.borlok.javacore.chapter28.atomic.AtomicDemo;
-import main.java.com.borlok.javacore.chapter28.callable.CallableDemo;
-import main.java.com.borlok.javacore.chapter28.executor.ExecutorDemo;
-import main.java.com.borlok.javacore.chapter28.forkjoin.recursiveactiondemo.FJExperiment;
-import main.java.com.borlok.javacore.chapter28.forkjoin.recursiveactiondemo.ForkJoinDemo;
-import main.java.com.borlok.javacore.chapter28.forkjoin.recursivetaskdemo.RecursiveTaskDemo;
-import main.java.com.borlok.javacore.chapter28.lock.LockDemo;
-import main.java.com.borlok.javacore.chapter28.semaphore.SemaphoreDemo;
+import com.borlok.javacore.chapter28.atomic.AtomicDemo;
+import com.borlok.javacore.chapter28.callable.CallableDemo;
+import com.borlok.javacore.chapter28.executor.ExecutorDemo;
+import com.borlok.javacore.chapter28.forkjoin.recursiveactiondemo.FJExperiment;
+import com.borlok.javacore.chapter28.forkjoin.recursiveactiondemo.ForkJoinDemo;
+import com.borlok.javacore.chapter28.forkjoin.recursivetaskdemo.RecursiveTaskDemo;
+import com.borlok.javacore.chapter28.lock.LockDemo;
+import com.borlok.javacore.chapter28.semaphore.SemaphoreDemo;
 
 public class Main {
     public static void main(String[] args) {

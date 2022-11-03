@@ -1,4 +1,4 @@
-package main.java.com.borlok.javacore.chapter13.applets;
+package com.borlok.javacore.chapter13.applets;
 
 /**
  * Создание апплета (не юзабельно и нерекомендованно к использованию)

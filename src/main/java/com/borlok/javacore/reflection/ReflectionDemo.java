@@ -1,6 +1,6 @@
-package main.java.com.borlok.javacore.reflection;
+package com.borlok.javacore.reflection;
 
-import main.java.com.borlok.javacore.reflection.proxylib.ProxyLibsDemo;
+import com.borlok.javacore.reflection.proxylib.ProxyLibsDemo;
 
 import java.lang.reflect.*;
 import java.util.Arrays;
@@ -9,7 +9,7 @@ public class ReflectionDemo {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
         // Получение объекта рефлексии по полному названию
         Class<?> testReflection =
-                Class.forName("main.java.com.borlok.javacore.reflection.TestReflection");
+                Class.forName("com.borlok.javacore.reflection.TestReflection");
         // Получение класса если знаем класс
         Class<?> testReflection2 = TestReflection.class;
 

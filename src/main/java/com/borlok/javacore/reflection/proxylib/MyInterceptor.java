@@ -1,9 +1,9 @@
 package com.borlok.javacore.reflection.proxylib;
 
 public  class MyInterceptor {
-    main.java.com.borlok.javacore.reflection.proxylib.User user;
+    private User user;
 
-    public MyInterceptor(main.java.com.borlok.javacore.reflection.proxylib.User user) {
+    public MyInterceptor(User user) {
         this.user = user;
     }
 
