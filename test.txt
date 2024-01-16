@@ -1,1 +1,1 @@
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Эти данные должны быть введены в массив

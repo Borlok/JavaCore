@@ -14,7 +14,7 @@ public class UCDemo4 {
     public UCDemo4() {
         int c;
         try {
-            URL hp = new URL("http://www.internic.net");
+            URL hp = new URL("https://www.google.com");
             URLConnection hpCon = hp.openConnection();
             long d = hpCon.getDate();
             if (d == 0)

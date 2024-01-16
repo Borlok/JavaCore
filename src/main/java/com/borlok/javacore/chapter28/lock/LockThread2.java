@@ -2,14 +2,18 @@ package com.borlok.javacore.chapter28.lock;
 
 import java.util.concurrent.locks.ReentrantLock;
 
-public class LockThread extends Thread{
-    private ReentrantLock lock;
-    private String name;
-    private int count = 0;
+/**
+ * @author Erofeevskiy Yuriy on 01.11.2023
+ */
 
-    public LockThread(ReentrantLock lock, String name) {
+
+public class LockThread2 extends Thread {
+    private final ReentrantLock lock;
+    private final String name;
+
+    public LockThread2(ReentrantLock lock, String b) {
         this.lock = lock;
-        this.name = name;
+        this.name = b;
     }
 
     @Override

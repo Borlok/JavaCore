@@ -19,7 +19,7 @@ public class Main {
 //        new DataIODemo13(); // Применение DataInputStream и DataOutputStream
 //        new FileReaderDemo14(); // Применение класса FileReader
 //        new FileWriterDemo15(); // Применение класса FileWriter
-//        new CharArrayReaderDemo16();// Применение CharArrayReader
+        new CharArrayReaderDemo16();// Применение CharArrayReader
 //        new CharArrayWriter17(); // Применение класса CharArrayWriter
 //        new BufferedReaderDemo18(); // Применение класса BufferedReader
 //        new PushbackReaderDemo19(); // Применение класса PushbackReader

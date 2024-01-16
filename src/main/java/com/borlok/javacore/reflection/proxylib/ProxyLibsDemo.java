@@ -1,6 +1,5 @@
 package com.borlok.javacore.reflection.proxylib;
 
-import com.borlok.javacore.reflection.proxylib.MyInterceptor;
 import net.bytebuddy.ByteBuddy;
 import net.bytebuddy.implementation.MethodDelegation;
 import org.mockito.cglib.proxy.Enhancer;

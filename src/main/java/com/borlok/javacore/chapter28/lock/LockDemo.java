@@ -7,6 +7,6 @@ public class LockDemo {
         ReentrantLock lock = new ReentrantLock();
 
         new LockThread(lock, "A").start();
-        new LockThread(lock, "B").start();
+        new LockThread2(lock, "B").start();
     }
 }
